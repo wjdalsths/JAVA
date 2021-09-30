@@ -1,13 +1,13 @@
 package _9_13;
 class Triangle{
-    double heigt;
+    double height;
     double bass;
-    public Triangle(double bass,double heigt){
+    public Triangle(double bass,double height){
         this.bass=bass;
-        this.heigt=heigt;
+        this.height=height;
     }
     double findArea(){
-        return bass*heigt/2;
+        return bass*height/2;
     }
     boolean isSameArea(Triangle a){
         if(a.findArea()==findArea())
