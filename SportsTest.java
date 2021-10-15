@@ -1,60 +1,4 @@
-package ½Ê_½Ê¿À;
-
-//class Sports{
-//	private String name;
-//	
-//	
-//	public Sports() {
-//		
-//	}
-//	public Sports(String name) {
-//		this.name=name;
-//	}
-//	public String getName() {
-//		return name;
-//	}
-//	public void setName(String name) {
-//		this.name = name;
-//	}
-//
-//
-//
-//	void rule() {
-//		System.out.println("°æ±â±ÔÁ÷: "+name+"±ÔÄ¢À» µû¸§");
-//	}
-//}
-//class BaseBall extends Sports{
-//	int player;
-//	
-//	public BaseBall(String name,int player) {
-//		super(name);
-//		this.player=player;
-//	}
-//	void rule() {
-//		System.out.println("ÇÃ·¹ÀÌ¾î: "+player);
-//	}
-//	
-//}
-//class PingPong extends Sports{
-//	String team;
-//	
-//	public PingPong(String name,String team) {
-//		super(name);
-//		this.team=team;
-//	}
-//	void rule() {
-//		System.out.println("°æ±â¹æ½Ä: "+team);
-//	}
-//}
-//public class SportsTest {
-//	public static void main(String[] args) {
-//		Sports sp=new Sports();
-//		Sports[] sp1 = {new BaseBall("baseball",9),new PingPong("PingPong","º¹½Ä")};
-//		for(Sports p:sp1)
-//			p.rule();
-//	}
-//}
-
+package ì‹­_ì‹­ì˜¤;
 
 
 class Sports {
@@ -64,25 +8,25 @@ class Sports {
         return name;
     }
     void rule() {
-        System.out.println(name + "±ÔÄ¢À» µû¸§");
+        System.out.println(name + "ê·œì¹™ì„ ë”°ë¦„");
     }
 }
 class Baseball extends Sports{
     int player = 9;
-    String name = "¾ß±¸";
+    String name = "ì•¼êµ¬";
     void rule() {
-        System.out.println("°æ±âÁ¾¸ñ : Baseball");
-        System.out.println("ÇÃ·¹ÀÌ¾î : " + player);
-        System.out.println("°æ±â±ÔÄ¢ : " + name + "±ÔÄ¢À» µû¸§");
+        System.out.println("ê²½ê¸°ì¢…ëª© : Baseball");
+        System.out.println("í”Œë ˆì´ì–´ : " + player);
+        System.out.println("ê²½ê¸°ê·œì¹™ : " + name + "ê·œì¹™ì„ ë”°ë¦„");
     }
 }
 class PingPong extends Sports {
-    String team = "º¹½Ä";
-    String name = "Å¹±¸";
+    String team = "ë³µì‹";
+    String name = "íƒêµ¬";
     void rule() {
-        System.out.println("°æ±âÁ¾¸ñ : PingPong");
-        System.out.println("°æ±â¹æ½Ä : º¹½Ä");
-        System.out.println("°æ±â±ÔÄ¢ : " + name + "±ÔÄ¢À» µû¸§");
+        System.out.println("ê²½ê¸°ì¢…ëª© : PingPong");
+        System.out.println("ê²½ê¸°ë°©ì‹ : ë³µì‹");
+        System.out.println("ê²½ê¸°ê·œì¹™ : " + name + "ê·œì¹™ì„ ë”°ë¦„");
     }
 }
 
