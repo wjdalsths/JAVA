@@ -1,16 +1,24 @@
-package _9_6;
+package Chap07;
 
-import java.util.Scanner;
+abstract class Human{
+	public abstract void sleep();
+	public abstract void say();
+	
+}
 
+class MinJun extends Human{
+	public void sleep() {
+		System.out.println("¹ÎÁØÀÌ°¡ ÀÜ´Ù.");
+	}
+	public void say() {
+		System.out.println("¹ÎÁØÀÌ°¡ ¸»ÇÑ´Ù.");
+	}
+}
 public class Ex01 {
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		int re=1,n;
-		n=sc.nextInt();
-		while(n>0) {
-			re*=n;
-			n-=1;
-		}
-		System.out.println(re);
+		MinJun min=new MinJun();
+		
+		min.say();
+		min.sleep();
 	}
 }
